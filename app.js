@@ -1,13 +1,13 @@
 'use strict'
 
-var msg = "Hello World";
+var listItem = '';
 
 var loader = function() {
-	document.getElementById('msg').innerHTML = msg;
+	addListItem('Teste');
+	console.log('Mobile HTML5 boilerplate is loaded!');
 }
 
-var changeMsg = function() {
-	document.getElementById('msg').innerHTML = "Surprise! :)";
+var addListItem = function(item) {
+	listItem = listItem + '<li>' + item + '</li>';
+	document.getElementById('list').innerHTML = listItem;
 }
-
-console.log("Mobile HTML5 boilerplate is loaded!");

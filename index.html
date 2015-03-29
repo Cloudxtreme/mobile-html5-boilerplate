@@ -14,8 +14,9 @@
 		<h1>Mobile HTML5 boilerplate</h1>
 	</div>
 	<div class="content">
-		<div id="msg"></div>
-		<button onclick="changeMsg()">Click and see!</button>
+		<ul id="list"></ul>
+		<input type="text" id="item" placeholder="New item">
+		<button onclick="addListItem(document.getElementById('item').value)">Add to list</button>
 	</div>
 </body>
 </html>
